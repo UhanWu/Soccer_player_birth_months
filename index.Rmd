@@ -1,0 +1,42 @@
+---
+title: "Euro 2020 Soccer player birth months"
+description: |
+  Welcome to the website. I hope you enjoy it!
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(readr)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+# Learn more about publishing to GitHub Pages at:
+# https://rstudio.github.io/distill/publish_website.html#github-pages
+
+```
+
+
+
+```{r}
+x <- read_csv("birthdates.csv",
+              col_types = cols(value = col_character()))
+```
+
+```{r}
+x %>% 
+  mutate(date = parse_date(str_sub(value, 2, 11))) %>% 
+  mutate(raw_month = months(date)) %>% 
+  mutate(month = parse_factor(raw_month, levels = month.name)) %>% 
+  group_by(month) %>% 
+  summarize(total = n())%>%
+  ggplot(mapping=aes(x=month, y=total,fill=month))+
+  geom_col()+
+  coord_flip()+
+  labs(title="Euro Soccer players and Birth dates",subtitle="Janurary?",x="Number of players",y="Birth Months")
+```
+```
+
