@@ -1,8 +1,13 @@
 ---
 title: "About this site"
 description: |
-  Some additional details about the website
+  Motivation and experience
 ---
+#Motivation#
+I decided to do this project mainly because is good creating a identitcal project that is the same as Preceptor's demo, it's good for trained of thoughts and stuck the skills and knowledge into my head. and ofcourse it's pretty **Cool**.
+
+#Experience#
+This is the first official websites I created after the distill tutorials which is pretty cool, I like to learn in class rather than doing the tutoials but we have to do it unless we going to be kick out. 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
