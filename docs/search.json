@@ -3,18 +3,18 @@
     {
       "path": "about.html",
       "title": "About this site",
-      "description": "Some additional details about the website",
+      "description": "*Motivation and Experience*",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-06-21T20:21:22-04:00"
+      "contents": "\nMotivation\nI decided to do this project mainly because is good creating a identitcal project that is the same as Preceptor’s demo, it’s good for trained of thoughts and stuck the skills and knowledge into my head. and ofcourse it’s pretty Cool.\nExperience\nThis is the first official websites I created after the distill tutorials which is pretty cool, I like to learn in class rather than doing the tutoials but we have to do it unless we going to be kick out.\n\n\n\n",
+      "last_modified": "2021-06-21T20:49:36-04:00"
     },
     {
       "path": "index.html",
       "title": "Euro 2020 Soccer player birth months",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "description": "Examination of births of players in Euro 2020\n",
       "author": [],
       "contents": "\n\n\n\n\n\n\n\n```{.r .distill-force-highlighting-css}\n\n\n",
-      "last_modified": "2021-06-21T20:29:23-04:00"
+      "last_modified": "2021-06-21T20:49:43-04:00"
     }
   ],
   "collections": []
