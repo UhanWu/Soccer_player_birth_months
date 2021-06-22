@@ -9,3 +9,4 @@ x <- raw_data %>%
   as_tibble()
 
 write_csv(x, "birthdates.csv")
+
